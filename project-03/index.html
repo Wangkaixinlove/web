@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>家庭会员主页</title>
+		<script src="rem.js"></script>
+		<style>
+			*{
+			padding:0;
+			margin:0;
+		    }
+		    header{
+		    	height: 1.45rem;
+		    	background-color: #3c3c3c;
+		    	color: #fff;
+		    	font-size: 0.6rem;
+		    	line-height: 1.45rem;
+		    }
+		    .close{
+		    	margin: 0 0.92rem 0 0.4rem;
+		    }
+		    .menu{
+		    	width:0.7rem;
+		    	height: 0.6rem;
+		    	background: url(img/menu.png) no-repeat;
+		    	display: inline-block;
+		    	background-size: 100% 100%;
+		    	float: right;
+		    	margin: 0.42rem 0.7rem 0 0;
+		    }
+		    .main{
+		    	height: 17rem;
+		    	background: linear-gradient(#b04c92,#5c6193);
+		    	padding: 0.37rem 0.4rem 0 0;
+		    	
+		    }
+		    .clearfix{
+		    	clear: both;
+		    }
+		    .fixed{
+		    	width: 2.53rem;
+		    	height: 1rem;
+		    	background-color: #f36da0;
+		    	border-radius: 0.51rem 0 0 0.51rem;
+		    	font-size: 0.4rem;
+		    	color: white;
+		    	position: fixed;
+		    	right: 0;
+		    	text-indent: 0.6rem;
+		    	line-height: 1rem;
+		    	margin-top: 0.28rem;
+		    }
+		    .item{
+		    	width: 4.8rem;
+		    	height: 5.12rem;
+		    	border-radius: 0.2rem;
+		    	background:rgba(255,255,255,0.26);
+		    	float: left;
+		    	margin-left: 0.4rem;
+		    	margin-top: 0.4rem;
+		    	text-align: center;
+		    	font-size: 0.4rem;
+		    	color: white;
+		    	
+		    }
+		    .middle{
+		    	width: 10rem;
+		    	height: 5.12rem;
+		    	border-radius: 0.2rem;
+		    	background:rgba(255,255,255,0.26);
+		    	float: left;
+		    	margin-left: 0.4rem;
+		    	margin-top: 0.4rem;
+		    }
+		    .item .tou{
+		    	width: 2.8rem;
+		    	margin-top: 0.28rem;
+		    }
+		    .middle .mid-img{
+		    	width: 4rem;
+		    	float: left;
+		    	margin-left: 2.11rem;
+		    	margin-top: 0.56rem;
+		    }
+		    .item p{
+		    	line-height: 0.84rem;
+		    	color: white;
+		    }
+		    .middle p{
+		    	color: white;
+		    	font-size: 0.4rem;
+		    	margin-top: 0.91rem;
+		    }
+		    .middle .up{
+		    	width: 0.9rem;
+		    	margin-left: 0.76rem;
+		    	margin-top: 0.75rem;
+		    }
+		    .item .jia{
+		    	width: 0.9rem;
+		    }
+		    .footer{
+		    	background-color: #3c3c3c;
+		    	height: 1.8rem;
+		    	
+		    }
+            .footer ul li{
+		    	color: white;
+		    	width: 25%;
+		    	float: left;
+		    	list-style-type: none;
+		    	height: 1.8rem;
+		    	font-size: 0.4rem;
+		    	text-align: center;
+		    	/*line-height: 2.1rem;*/
+		    	margin-top: 0.2rem;
+		    }
+		    .footer ul li span{
+		    	margin-left: -0.85rem;
+		    	margin-top: 0.5rem;
+		    }
+		    .bot{
+		    	width: 0.8rem;
+		    	margin-left: 0.4rem;
+		    	margin-bottom: 0.4rem;
+		    }
+		</style>
+	</head>
+	<body>
+		<header>
+			<span class="close">X</span>
+			<span >个人中心</span>
+			<span class="menu"></span>
+		</header>
+		<div class="main clearfix">
+			<div class="fixed">修改密码</div>
+			<div class="item">
+				<img class="tou" src="img/VIPimage01.png">
+				<p>健康体检预约</p>
+				<img class="jia" src="img/appointment_icon.png">
+			</div>
+			<div class="item">
+				<img class="tou" src="img/VIPimage02.png">
+				<p>专家诊疗预约</p>
+				<img class="jia" src="img/appointment_icon.png">
+			</div>
+			<div class="middle">
+				<img class="mid-img" src="img/VIPimage03.png">
+				<p>华西绿通预约</p>
+				<img class="up" src="img/appointment_ icon_on.png">
+			</div>
+			<div class="item">
+				<img class="tou" src="img/VIPimage04.png">
+				<p>住院关怀预约</p>
+				<img class="jia" src="img/appointment_icon.png">
+			</div>
+			<div class="item">
+				<img class="tou" src="img/VIPimage05.png">
+				<p>消费明细查询</p>
+				<img class="jia" src="img/appointment_icon.png">
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li class="foot">
+					<img class="bot" src="img/search_icon.png">
+					<span >首页</span>
+				</li>
+				<li class="foot">
+					<img class="bot" src="img/search_icon.png">
+					<span>首页</span>
+				</li>
+				<li class="foot">
+					<img class="bot" src="img/search_icon.png">
+					<span>首页</span>
+				</li>
+				<li class="foot">
+					<img class="bot" src="img/search_icon.png">
+					<span>首页</span>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</body>
+</html>

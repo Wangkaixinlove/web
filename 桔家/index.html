@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>桔家首页</title>
+		<script src="rem.js"></script>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+				font-size: 0.14rem;
+				font-weight: normal;
+			}
+			a{
+				text-decoration: none;
+			}
+			ul li{
+				list-style-type: none;
+			}
+			.head{
+				height: 1.28rem;
+				background-color: #ffdb2c;
+			}
+			.head .title{
+				font-size: 0.35rem;
+				font-weight: normal;
+				float: left;
+				margin-left: 3.38rem;
+				margin-top: 0.5rem;
+				padding: 0;
+			}
+			.head .soso{
+				float: right;
+				width: 0.42rem;
+				margin-right: 0.32rem;
+				margin-top: 0.5rem;
+			}
+			/*.low{
+				font-size: 0.08rem;
+				width: 0.62rem;
+				float: left;
+			}*/
+			.daohang ul li{
+				width: 25%;
+				height: 0.88rem;
+				float: left;
+				text-align: center;
+				line-height: 0.88rem;
+			}
+			.specail{
+				border-bottom: 0.08rem solid #ffdb2c;
+			}
+			.daohang ul li a{
+				font-size: 0.3rem;
+				color: #a3a3a3;
+			}
+			.banner{
+				width: 100%;
+				height: 3.2rem;
+				background-image: url(img/banner_02.jpg);
+				background-size: cover ;
+				clear: both;
+			}
+			.lunbo{
+				float: right;
+				width: 0.7rem;
+				margin-right: 0.3rem;
+				margin-top: 2.8rem;
+			}
+			.hot{
+				height: 1.28rem;
+				text-align: center;
+				
+			}
+			.hot p{
+				font-size: 0.3rem;
+				margin-top: 0.32rem;
+			}
+			#zimu{
+				font-size: 0.22rem;
+				margin-top: -0.28rem;
+				opacity: 0.8;
+			}
+			#hoter{
+				font-size: 0.36rem;
+				color:#e5e5e5;
+				margin-top:-0.14rem ;
+				opacity: 0.7;
+			}
+			.content{
+				text-align: center;
+				height: 5rem;
+			}
+			.item1{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju_03.png);
+				background-size: cover;
+				text-align:center;
+			}
+			.item2{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju_05.png);
+				background-size: cover;
+				text-align:center;
+			}
+			.item3{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju_10.png);
+				background-size: cover;
+				text-align:center;
+			}
+			.item4{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju_11.png);
+				background-size: cover;
+				text-align:center;
+			}
+			.item5{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju5.jpg);
+				background-size: cover;
+				text-align:center;
+			}
+			.item6{
+				width: 3.3rem;
+				height: 2.22rem;
+				float: left;
+				margin-left: 0.26rem;
+				margin-bottom: 0.24rem;
+				background-image: url(img/jiaju6.jpg);
+				background-size: cover;
+				text-align:center;
+			}
+			.inbox{
+				height: 0.6rem;
+				width: 3.3rem;
+				background-color: rgba(75,77,83,0.6);
+				margin-top: 1.62rem;
+				
+				color: #eaeaea;
+				font-size: 0.22rem;
+				line-height: 0.6rem;
+				text-align: center;
+				/*text-indent: 0.28rem;*/
+
+			}
+			#txt{
+				display: block;
+				margin-left: 0.45rem;
+			}
+			.star{
+				width: 0.5rem;
+				height: 0.5rem;
+				float: right;
+				margin-top: 1.16rem;
+				margin-right: 0.2rem;
+			}
+			.footer {
+				position: fixed;
+				bottom: 0;
+				height: 1.1rem;
+				border: 1px solid lightgray;
+				background-color: white;
+				width: 7.5rem;
+	
+			}
+			.footer ul li{
+				float: left;
+				width: 20%;
+				color: #bcbcbc;
+				font-size: 0.22rem;
+				text-align: center;
+				height: 1rem;
+				margin-top: 0.2rem;
+			}
+			.tou{
+				width: 0.6rem;
+				height: 0.5rem;
+			}
+			.sp{
+				width: 0.8rem;
+			}
+		</style>
+	</head>
+	<body>
+		<!--标题开始-->
+		<div class="head">
+			<span class="title">桔家</span>
+			<!--<span class="low">ORANGE HOUSE</span>-->
+			<img class="soso" src="img/sousuo.png">
+		</div>
+		<!--标题结束-->
+		<!--导航开始-->
+		<div class="daohang">
+			<ul>
+				<li class="specail"><a href="#">推荐</a></li>
+				<li><a href="#">家居</a></li>
+				<li><a href="#">餐厨</a></li>
+				<li><a href="#">床上用品</a></li>
+			</ul>
+		</div>
+		<!--导航结束-->
+		<!--banner开始-->
+		<div class="banner">
+			<img src="img/lunbo.png" class="lunbo">
+		</div>
+		<!--banner结束-->
+		<!--热门推荐-->
+		<div class="hot">
+			<p>热 | 门 | 推 | 荐</p>
+			<p id="hoter">HOT RECOMMENDATION</p>
+			<p id="zimu">R E C O M M E N D A T I O N</p>
+		</div>
+		<!--推荐结束-->
+		<!--图文开始-->
+		<div class="content">
+			<div class="item1">
+				<img src="img/star1.png" class="star">
+				<div class="inbox"><span id="txt">--北欧原木色置物架--</span></div>
+			</div>
+			<div class="item2">
+				<img src="img/star2.png" class="star">
+				<div class="inbox"><span id="txt">--简约黑檀木茶几--</span></div>
+			</div>
+			<div class="item3">
+				<img src="img/star2.png" class="star">
+				<div class="inbox"><span id="txt">--北欧白橡木书架--</span></div>
+			</div>
+			<div class="item4">
+				<img src="img/star1.png" class="star">
+				<div class="inbox"><span id="txt">--北欧风餐边柜--</span></div>
+			</div>
+			<div class="item5">
+				<img src="img/star1.png" class="star">
+				<div class="inbox"><span id="txt">--北欧原木色置物架--</span></div>
+			</div>
+			<div class="item6">
+				<img src="img/star2.png" class="star">
+				<div class="inbox"><span id="txt">--北欧原木色置物架--</span></div>
+			</div>
+		</div>
+		<!--图文结束-->
+		<!--底部开始-->
+		<div class="footer">
+			<ul>
+				<li>
+					<img src="img/shouye.png" class="tou">
+					<p style="color: #ffdb2c;">首页</p>
+				</li>
+				<li>
+					<img src="img/shop.png" class="tou">
+					<p>商城</p>
+				</li>
+				<li><img src="img/jiahao.png" class="sp"></li>
+				<li>
+					<img src="img/qiu.png" class="tou">
+					<p >灵感</p>
+				</li>
+				<li>
+					<img src="img/my.png" class="tou">
+					<p>我的</p>
+				</li>
+			</ul>
+		</div>
+		<!--底部结束-->
+	</body>
+</html>

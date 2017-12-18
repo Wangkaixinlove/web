@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+		<script src="jQuery.js"></script>
+		<script src="jquery.mobile-1.4.5.js"></script>
+		<style>
+			.content{
+				background-image: url('img/u=4166191557,286858174&fm=27&gp=0.jpg');
+				width: 100%;
+				height: 100%;
+				text-align: center;
+			}
+			.qq{
+				width: 130px;
+				height: 130px;
+				border-radius: 65px;
+				margin-top:120px;
+				
+			}
+			.log{
+				text-align: center;
+				margin: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div data-role='page' class="content">
+			<img src="img/QQ1.jpg" class="qq">
+			<div class="log">
+				<input type="text" placeholder="用户名" id="uname">
+				<input type="number" placeholder="大陆手机号" id="num">
+				<input type="password" placeholder="设置密码" id="pwd">
+				<input type="button" value="注册" style="background-color: dodgerblue;" id="btn">
+				
+			</div>
+			<span class="jump"><a href="denglu.html" style="color: white;">注册成功？点此登录</a></span>
+		</div>
+	</body>
+	<script>
+		
+		$('#btn').click(function(){
+			var name=document.getElementById('uname').value;
+		    var pwd=document.getElementById('pwd').value;
+			$.ajax({
+				type:"get",
+				url:'http://datainfo.duapp.com/shopdata/userinfo.php',
+				data:{status:'register',userID:name,password:pwd},
+				success:function(data){
+					console.log(data);
+					if(data==0){
+					$('#uname').parent().after('<span style="color:red;" >用户名重名</span>');		
+					}
+					else if(data==2)
+					{
+					$('#pwd').parent().after('<span style="color:red;" >数据库出问题</span>');		
+					}
+					else{
+					alert('注册成功！');
+					window.location.href='denglu.html';
+					}
+				},
+				error:function(data){
+					
+				}
+			});
+		});
+	</script>
+</html>
